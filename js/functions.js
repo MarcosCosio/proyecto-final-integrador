@@ -11,6 +11,14 @@ getData('https://randomuser.me/api/',
     if (Math.random()<0.35) 
     {
         document.getElementById("portrait").src="./non-binary.jpg";
+        let port=document.getElementById("portrait");
+        port.addEventListener("load", function(){
+          topHeight=parseInt(document.getElementById("portrait").height)*(0.30);
+          titleHeight=parseInt(document.getElementById("portrait").height)*(0.50);
+          document.getElementById("top-md").style.height=topHeight+"px";
+          document.getElementById("title-md").style.height=titleHeight+"px";
+        }
+        )
         document.getElementById("portrait").alt=data.results[0].name.first+" "+data.results[0].name.last;
     }
     else
@@ -18,11 +26,27 @@ getData('https://randomuser.me/api/',
         if (data.results[0].gender==="male")
          {
           document.getElementById("portrait").src="./male.jpg";
+          let port=document.getElementById("portrait");
+          port.addEventListener("load", function(){
+          topHeight=parseInt(document.getElementById("portrait").height)*(0.30);
+          titleHeight=parseInt(document.getElementById("portrait").height)*(0.50);
+          document.getElementById("top-md").style.height=topHeight+"px";
+          document.getElementById("title-md").style.height=titleHeight+"px";
+          }
+          )
           document.getElementById("portrait").alt=data.results[0].name.first+" "+data.results[0].name.last;
          }
          else
          {
           document.getElementById("portrait").src="./female.jpg";
+          let port=document.getElementById("portrait");
+          port.addEventListener("load", function(){
+          topHeight=parseInt(document.getElementById("portrait").height)*(0.30);
+          titleHeight=parseInt(document.getElementById("portrait").height)*(0.50);
+          document.getElementById("top-md").style.height=topHeight+"px";
+          document.getElementById("title-md").style.height=titleHeight+"px";
+          }
+          )
           document.getElementById("portrait").alt=data.results[0].name.first+" "+data.results[0].name.last;
          }
     }

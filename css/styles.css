@@ -1,24 +1,33 @@
-#left-col {
-  padding-right: 0;
-}
 
-#right-col {
-  padding: 0;
-}
-
-.right-row{
-  margin: 0;
-}
-
-
-
-@media (min-width: 768px) {
-  #top{
-  height: 100px;
-  }
 
   #title{
-    height: 150px;
+    height: 7rem;
     background-color: #FFCC00;
+    text-align: center;
+  }
+
+  h1{
+    margin:8px 0px 0px 0px !important;
+  }
+
+
+
+
+/* Todo lo que es de escritorio va aca||All of desktop particularities goes here */
+@media (min-width: 768px) {
+  #title-md{
+    background-color: #FFCC00;
+  }
+
+  #left-col {
+  padding-right: 0;
+  }
+
+  #right-col {
+    padding: 0;
+  }
+
+  .right-row{
+  margin: 0;
   }
 }
