@@ -10,8 +10,86 @@
     margin:8px 0px 0px 0px !important;
   }
 
+  /*Tuve que especificar el tamaño para h3 pues el heredado de bootstrap se rompio/ i had to particularly specify h3 because the one inherited by bootstrap crushed*/
 
+  h3{
+    font-size: 1rem;
+  }
 
+  .skills-block{
+    margin-left: 2rem;
+    border-bottom: 1px solid black !important;
+    padding-bottom: 10px;
+    width: 80%;
+  }
+
+  .skills-block-p{
+    margin-left: 2rem;
+    width: 87%;
+  }
+
+  #about{
+    margin-top: 2rem;    
+  }
+
+  .years{
+    margin-left: 40px;
+    font-weight: bold;
+    font-size: 0.85rem;
+  }
+
+  .job-pos{
+    font-weight: bold;
+    font-size: 0.85rem;
+  }
+
+  .company{
+    font-size: 0.85rem;    
+  }
+
+  .software-title{
+    font-size: 0.85rem;
+  }
+
+  .progress-row{
+    margin-bottom: 5px;
+  }
+
+  .progress-color{
+    background-color: #222126;    
+  }
+
+  #context{
+    background-color: #222126;
+    margin-top: 2rem;
+  }
+
+  .references-block{
+    margin-top: 2rem;
+    margin-left: 2rem;
+    color: white;
+    border-bottom: 1px solid  #FFCC00 !important;
+    padding-bottom: 10px;
+    width: 80%;
+  }
+
+  .mayor{
+    color: white;
+    margin-left: 40px;
+    font-weight: bold;
+    font-size: 0.85rem;
+  }
+
+  .college{
+    color: white;
+    font-weight: bold;
+    font-size: 0.85rem;
+  }
+
+  .college-years{
+    color: white;
+    font-size: 0.85rem;    
+  }
 
 /* Todo lo que es de escritorio va aca||All of desktop particularities goes here */
 @media (min-width: 768px) {
