@@ -6,14 +6,8 @@
     text-align: center;
   }
 
-  h1{
-    margin:8px 0px 0px 0px !important;
-  }
-
-  /*Tuve que especificar el tamaño para h3 pues el heredado de bootstrap se rompio/ i had to particularly specify h3 size because the one inherited by bootstrap crushed*/
-
-  h3{
-    font-size: 1rem;
+  #surname{
+    margin:11px 0px 0px 0px !important;
   }
 
   .skills-block{
@@ -59,17 +53,12 @@
     background-color: #222126;    
   }
 
-  #context{
+  .context{
     background-color: #222126;
   }
 
   #education{
     margin-top: 2rem;    
-  }
-
-  /*corrige el padding heredada de la clase row de bootstrap/corrects a inherited padding from row class of bootstrap*/
-  .corrector{
-    margin-right: 0px;
   }
 
   .padding-corrector{
@@ -123,8 +112,31 @@
   #personal-data-block{
     margin-top: 1rem;
   }
+
+@media (max-width: 768px) {  
+/*corrige el padding heredada de la clase row de bootstrap/corrects a inherited padding from row class of bootstrap*/
+  .corrector{
+    margin-right: 0px;
+  }
+
+  /*Tuve que especificar el tamaño para h3 pues el heredado de bootstrap se rompio/ i had to particularly specify h3 size because the one inherited by bootstrap crushed*/
+
+  h3{
+    font-size: 1rem;
+  }
+
+
+  #left-col {
+    background-color: white;
+  }
+}
 /* Todo lo que es de escritorio va acá||All of desktop particularities goes here */
 @media (min-width: 768px) {
+
+  .about{
+    margin-bottom: 1rem;
+  }
+
   #title-md{
     background-color: #FFCC00;
   }
@@ -139,5 +151,31 @@
 
   .right-row{
   margin: 0;
+  }
+
+  #name-md{
+    margin: 7px 0px 0px 45px;
+  }
+
+  #pro-title{
+    margin-left: 45px;
+  }
+
+  .mayor{
+    margin-left: 0px;
+    font-weight: normal;
+  }
+
+  .context-title{
+    margin-top: 0rem;
+  }
+
+  #skills-block{
+    margin-top: 2rem;
+  }
+
+  .skills-block{
+    width: 95%;
+    margin-bottom: 2rem;
   }
 }
