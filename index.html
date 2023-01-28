@@ -88,7 +88,7 @@
 							</div>
 							<div class="row padding-corrector">
 								<div class="col-10 offset-2">
-									<h4 id="phone-mobile" class="reference-data">+549000000000</h4>
+									<h4 id="phone-md" class="reference-data">+549000000000</h4>
 								</div>
 							</div>
 						</div>
@@ -101,7 +101,7 @@
 							</div>
 							<div class="row padding-corrector">
 								<div class="col-10 offset-2">
-									<h4 id="email-mobile" class="reference-data">+549000000000</h4>
+									<h4 id="email-md" class="reference-data">+549000000000</h4>
 								</div>
 							</div>
 						</div>
@@ -114,7 +114,7 @@
 							</div>
 							<div class="row padding-corrector">
 								<div class="col-10 offset-2">
-									<h4 class="reference-data">+549000000000</h4>
+									<h4 class="reference-data">www.something.com</h4>
 								</div>
 							</div>
 						</div>
@@ -127,9 +127,14 @@
 							</div>
 							<div class="row padding-corrector">
 								<div class="col-10 offset-2">
-									<h4 id="adress-mobile" class="reference-data">+549000000000</h4>
+									<h4 id="adress-md" class="reference-data">+549000000000</h4>
 								</div>
 							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-6 offset-3">
+							<button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal">Más Información / More Information</button>
 						</div>
 					</div>
 				</div>
@@ -137,7 +142,7 @@
 			<div class="col-md-10 offset-md-0 d-none d-md-inline" id="right-col">
 				<div class="row right-row" id="top-md"></div>
 				<div class="row right-row" id="title-md">
-					<h1 id="name-md"><b id="">Name</b> Surname</h1>
+					<h1 id="name-md"><b>Name</b> Surname</h1>
 					<h2 id="pro-title">Profesional Title</h2>
 				</div>
 				<div class="row right-row">
@@ -235,12 +240,60 @@
 				</div>
 			</div>
 		</div>
-
+		<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			  <div class="modal-dialog" role="document">
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <h5 class="modal-title" id="exampleModalLabel">Más Información / More Information</h5>
+			        <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+			          <span aria-hidden="true">&times;</span>
+			        </button>
+			      </div>
+			      <div class="modal-body">
+			      	<div class="row">
+			      		<div class="col-6">
+			      			<h6>Ciudad / City:</h6>
+			      		</div>
+			      		<div class="col-6">
+			      			<h6 id="city-md">Cba</h6>
+			      		</div>
+			      	</div>  
+			      	<div class="row">
+			      		<div class="col-6">
+			      			<h6>Pais / Country:</h6>
+			      		</div>
+			      		<div class="col-6">
+			      			<h6 id="country-md">Cba</h6>
+			      		</div>
+			      	</div>  
+			      	<div class="row">
+			      		<div class="col-6">
+			      			<h6>Código Postal / Post Code:</h6>
+			      		</div>
+			      		<div class="col-6">
+			      			<h6 id="pc-md">Cba</h6>
+			      		</div>
+			      	</div>  
+			      	<div class="row">
+			      		<div class="col-6">
+			      			<h6>Estado / State:</h6>
+			      		</div>
+			      		<div class="col-6">
+			      			<h6 id="state-md">Cba</h6>
+			      		</div>
+			      	</div>  
+			      </div>
+			      <div class="modal-footer">
+			        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+			      </div>
+			    </div>
+			  </div>
+		</div>
 
 
 		<!--A partir de aca se escriben los elementos de mobile/from here mobile elements are written-->
 		<div class="row d-md-none corrector" id="title">
-			<h1 id="surname"><b id="name">Name</b> Surname</h1>
+			<h1 id="name-sm"><b>Name</b> Surname</h1>
 			<h2>Profesional Title</h2>
 		</div>
 		<div class="row d-md-none corrector">
@@ -404,7 +457,7 @@
 					</div>
 					<div class="row padding-corrector">
 						<div class="col-10 offset-2">
-							<h4 id="phone-mobile" class="reference-data">+549000000000</h4>
+							<h4 id="phone-sm" class="reference-data">+549000000000</h4>
 						</div>
 					</div>
 				</div>
@@ -417,7 +470,7 @@
 					</div>
 					<div class="row padding-corrector">
 						<div class="col-10 offset-2">
-							<h4 id="email-mobile" class="reference-data">+549000000000</h4>
+							<h4 id="email-sm" class="reference-data">+549000000000</h4>
 						</div>
 					</div>
 				</div>
@@ -443,10 +496,49 @@
 					</div>
 					<div class="row padding-corrector">
 						<div class="col-10 offset-2">
-							<h4 id="adress-mobile" class="reference-data">+549000000000</h4>
+							<h4 id="adress-sm" class="reference-data">+549000000000</h4>
 						</div>
 					</div>
 				</div>
+			</div>
+			<div class="row corrector" id="info-button">
+				<div class="offset-2 corrector" id="btn-m-info-style">
+					<button type="button" id="btn-m-info" class="btn btn-secondary">Más Información / More Information</button>
+				</div>
+			</div>
+			<div class="row corrector" id="m-info" hidden>
+				<div class="row corrector">
+			      		<div class="col-4 offset-2">
+			      			<h6>Ciudad / City:</h6>
+			      		</div>
+			      		<div class="col-4 offset-2">
+			      			<h6 id="city-sm">Cba</h6>
+			      		</div>
+			      	</div>  
+			    <div class="row corrector">
+			      		<div class="col-4 offset-2">
+			      			<h6>Pais / Country:</h6>
+			      		</div>
+			      		<div class="col-4 offset-2">
+			      			<h6 id="country-sm">Cba</h6>
+			      		</div>
+			    </div>  
+			    <div class="row corrector">
+			      		<div class="col-4 offset-2">
+			      			<h6>Código Postal / Post Code:</h6>
+			      		</div>
+			      		<div class="col-4 offset-2">
+			      			<h6 id="pc-sm">Cba</h6>
+			      		</div>
+			    </div>  
+			    <div class="row corrector">
+			      		<div class="col-4 offset-2">
+			      			<h6>Estado / State:</h6>
+			      		</div>
+			      		<div class="col-4 offset-2">
+			      			<h6 id="state-sm">Cba</h6>
+			      		</div>
+			    </div>
 			</div>
 		</div>
 	</div>

@@ -113,6 +113,18 @@
     margin-top: 1rem;
   }
 
+  #info-button{
+    padding: 1rem 0rem 1rem;
+  }
+
+  #m-info{
+    color: white;
+  }
+
+  #btn-m-info-style{
+    max-width: 83%;
+  }
+
 @media (max-width: 768px) {  
 /*corrige el padding heredada de la clase row de bootstrap/corrects a inherited padding from row class of bootstrap*/
   .corrector{
@@ -177,5 +189,9 @@
   .skills-block{
     width: 95%;
     margin-bottom: 2rem;
+  }
+
+  .close{
+    border: 0px;
   }
 }
